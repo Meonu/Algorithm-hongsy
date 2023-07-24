@@ -3,13 +3,12 @@ n,m = input().split()
 a = []
 b = []
 for i in range(int(n)):
-    a.append(input().split())
+    a.append(list(map(int, input().split())))
 
 for i in range(int(n)):
-    b.append(input().split())
+    b.append(list(map(int, input().split())))
 
-a = np.array(a,dtype=int)
-b = np.array(b,dtype=int)
-
-sum = str(a+b)
-print(sum.replace('[','').replace(']',''))
+for i in range(0, int(n)):
+    for j in range(0, int(m)):
+        print(a[i][j] + b[i][j],end=' ')
+    print()
