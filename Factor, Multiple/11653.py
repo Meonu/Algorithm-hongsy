@@ -18,4 +18,4 @@ while n >= i*i:
     i+=1
 
 if t != 1:
-    print(t)
+    print(int(t))
